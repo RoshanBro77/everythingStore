@@ -3,6 +3,7 @@
   max-height: 20em;
   object-fit: fill;
   cursor: pointer;
+  border-radius: 2em;
 }
 .categoriesCard + .categoriesCard {
   margin-bottom: 2em;
@@ -18,4 +19,8 @@
 }
 .cardName {
   font-size: 1.2em;
+}
+.card:hover {
+  transition: transform 0.4s;
+  transform: scale(115%);
 }
