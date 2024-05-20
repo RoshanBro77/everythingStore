@@ -1,0 +1,15 @@
+.homeBody {
+  width: 70vw;
+  margin: auto;
+  background-color: #fafafa;
+}
+.video {
+  width: 100%;
+  object-fit: fill;
+  height: 80vh;
+}
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

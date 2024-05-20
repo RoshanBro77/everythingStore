@@ -1,0 +1,29 @@
+.logo {
+  justify-content: center;
+  align-self: center;
+}
+.header > .middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2em 0;
+}
+.header {
+  background-color: #f85604;
+}
+
+.search {
+  margin-left: 1.2em;
+  flex: 1;
+}
+.search > textarea {
+  border-radius: 0.7em;
+  border: none;
+  resize: none;
+  width: 100%;
+  font-size: 1em;
+  padding: 0.4em;
+}
+.cart {
+  display: flex;
+}
