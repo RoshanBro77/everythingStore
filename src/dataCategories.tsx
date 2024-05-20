@@ -15,7 +15,7 @@ let categories = [
   { name: 'Phones', image: phones },
   { name: 'Processors', image: processors },
   { name: 'Smartwatches', image: smartwatch },
-  { name: 'Speaker', image: Speaker },
+  { name: 'Speakers', image: Speaker },
 ]
 
 export default categories
