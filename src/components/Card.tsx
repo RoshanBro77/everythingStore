@@ -1,5 +1,6 @@
 import React from 'react'
 import '../components/style/Card.css'
+import Button from './Button'
 interface Props {
   name: string
   category: string
@@ -15,9 +16,9 @@ function Card({ name, image, price, description, category }: Props) {
           <img src={image} alt='image' />
         </div>
         <p className='cardName'>{name}</p>
-        <div className='descriptions'>
-          <span>{price}</span>
-        </div>
+        <span className='price'>{price} </span>
+        <p className='description'>{description}</p>
+        {price.length != 0 && <Button image='' name='Add to cart' />}
       </div>
     </>
   )

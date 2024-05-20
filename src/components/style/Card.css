@@ -4,22 +4,32 @@
   align-items: center;
   width: 17em;
   min-height: 15em;
-  /* max-height: 25em; */
+  max-height: 25em;
+  overflow: hidden;
   object-fit: cover;
   cursor: pointer;
   border-radius: 1em;
-}
-.card + .card {
   margin-bottom: 2em;
+  padding: 0.2em;
 }
 .cardImage > img {
   width: 100%;
-  height: 8em;
+  min-height: 12.5em;
+  max-height: 12.5em;
 }
 .cardName {
   font-weight: bold;
 }
 .card:hover {
   transition: transform 0.4s;
-  transform: scale(115%);
+  transform: scale(110%);
+}
+.price {
+  font-weight: bold;
+  color: red;
+}
+.description {
+  max-height: 4em;
+  font-size: 0.8em;
+  overflow: hidden;
 }
