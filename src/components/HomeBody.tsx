@@ -10,7 +10,15 @@ function HomeBody() {
     <>
       <div className='homeBody'>
         <div className='heroVideo'>
-          <video src={heroVideo} autoPlay loop className='video'></video>
+          <video
+            src={heroVideo}
+            autoPlay
+            muted
+            playsInline
+            loop
+            preload='true'
+            className='video'
+          ></video>
         </div>
         <p className='secondTitle'>Categories</p>
         <div className='categories'>
@@ -27,13 +35,15 @@ function HomeBody() {
         <div className='secondTitle'>Suggestions For You</div>
         <div className='products'>
           {dataProducts.map((product, index) => (
-            <Card
-              name={product.name}
-              image={product.image}
-              price={product.price}
-              description={product.description}
-              category='Phones'
-            />
+            <>
+              <Card
+                name={product.name}
+                image={product.image}
+                price={product.price}
+                description={product.description}
+                category='Phones'
+              />
+            </>
           ))}
         </div>
       </div>

@@ -13,3 +13,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  justify-content: space-between;
+  max-height: 100em;
+}
