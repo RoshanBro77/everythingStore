@@ -10,7 +10,7 @@ function About() {
         <img src={heroImage} alt='heroimage' />
       </div>
       <div className='about  '>
-        <div className='secondTitle center'>Our Story</div>
+        <p className='secondTitle center'>Our Story</p>
         <div className='ourStory flex'>
           <div className='leftContainer'>
             <p className='desctext'>

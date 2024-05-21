@@ -2,9 +2,8 @@ import heroVideo from '../assets/Video/applepromo.mp4'
 import './style/HomeBody.css'
 
 import dataProducts from '../dataProducts'
-import dataCategories from '../dataCategories'
+import categories from '../dataCategories'
 import Card from './Card'
-
 function HomeBody() {
   return (
     <>
@@ -22,7 +21,7 @@ function HomeBody() {
         </div>
         <p className='secondTitle'>Categories</p>
         <div className='categories'>
-          {dataCategories.map((item, index) => (
+          {categories.map((item, index) => (
             <Card
               name={item.name}
               image={item.image}

@@ -17,5 +17,4 @@ let categories = [
   { name: 'Smartwatches', image: smartwatch },
   { name: 'Speakers', image: Speaker },
 ]
-
 export default categories

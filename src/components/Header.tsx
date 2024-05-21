@@ -20,12 +20,16 @@ function Header() {
             rows={1}
           ></textarea>
         </div>
-        <div className='logIn'>
-          <Button name={'Login'} image='' />
-        </div>
-        <div className='signUp'>
-          <Button name={'Sign Up'} image='' />
-        </div>
+        <NavLink className={'nav'} to={'/logIn'}>
+          <div className='logIn'>
+            <Button name={'Login'} image='' />
+          </div>
+        </NavLink>
+        <NavLink className={'nav'} to={'/logIn'}>
+          <div className='signUp'>
+            <Button name={'Sign Up'} image='' />
+          </div>
+        </NavLink>
         <div className='cart'>
           <Button name='' image={cart} />
         </div>
