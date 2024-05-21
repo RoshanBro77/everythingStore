@@ -9,10 +9,7 @@
   color: #f85604;
   padding-bottom: 0.5em;
 }
-.footer__container {
-  display: flex;
-  flex-direction: column;
-}
+
 .footer__logo > img {
   padding-top: 3rem;
   width: 6em;
@@ -23,11 +20,12 @@
   margin-bottom: 0.5em;
 }
 .footer__subcontainer {
-  padding: 0.1em 0.2em;
+  padding-top: 0.1em;
   font-size: 1rem;
 }
-.footer__subcontainer > a {
+.footer__subcontainer {
   text-decoration: none;
+
   color: #f85604;
 }
 .footer__contents__middle__sub_Container > .subtitle {
@@ -38,4 +36,11 @@
   padding-top: 0.5em;
   justify-content: center;
   align-items: center;
+}
+.footerlogoandtext {
+  display: flex;
+  cursor: pointer;
+}
+.footerlogoandtext > p {
+  margin-left: 0.5em;
 }

@@ -1,8 +1,11 @@
-.homeBody {
+.homeBody,
+.ourProducts,
+.about {
   width: 70vw;
   margin: auto;
   background-color: #fafafa;
 }
+
 .video {
   width: 100%;
   object-fit: fill;
@@ -13,10 +16,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.products {
+.products,
+.ourproducts {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   justify-content: space-between;
+}
+.products {
   max-height: 108em;
 }
