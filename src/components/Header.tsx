@@ -3,7 +3,7 @@ import logo from '../assets/Images/Logo/Logo.png'
 import Button from './Button'
 import cart from '../assets/Images/otherimages/shopping-cart.png'
 import { Link, NavLink } from 'react-router-dom'
-function Header() {
+function Header({}) {
   return (
     <div className='header'>
       <div className='middle'>
