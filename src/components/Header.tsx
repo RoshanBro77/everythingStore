@@ -25,7 +25,7 @@ function Header({}) {
             <Button name={'Login'} image='' />
           </div>
         </NavLink>
-        <NavLink className={'nav'} to={'/logIn'}>
+        <NavLink className={'nav'} to={'/signUp'}>
           <div className='signUp'>
             <Button name={'Sign Up'} image='' />
           </div>
