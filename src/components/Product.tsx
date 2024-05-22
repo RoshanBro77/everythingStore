@@ -1,10 +1,11 @@
 // ProductPage.tsx
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import dataProducts from '../dataProducts'
 import './style/Product.css'
 import Card from './Card'
 import Button from './Button'
+import { CartContext } from './Cart'
 const Product: React.FC = () => {
   const { type, name } = useParams<{ type: string; name: string }>()
   const isCategory = type === 'category'
@@ -15,7 +16,14 @@ const Product: React.FC = () => {
   const selectedProduct = dataProducts.find((product) => {
     return product.name === name
   })
-
+  const cartContext = useContext(CartContext)
+  if (!cartContext) {
+    throw new Error('CartContext must be used within a CartProvider')
+  }
+  const { cart, setCart } = cartContext
+  const handleAddToCart = (product: any) => {
+    setCart([...cart, product])
+  }
   const handleCardProductClick = (product: string) => {
     navigate(`/products/product/${product}`)
   }
@@ -34,9 +42,11 @@ const Product: React.FC = () => {
                   category={product.category}
                   onClick={() => handleCardProductClick(product.name)}
                 />
-                <div className='addToCart'>
-                  {<Button image='' name='Add to cart' />}
-                </div>
+                <button onClick={() => handleAddToCart(product)}>
+                  <div className='addToCart'>
+                    {<Button image='' name='Add to cart' />}
+                  </div>
+                </button>
                 <p></p>
               </div>
             ))}
@@ -61,9 +71,11 @@ const Product: React.FC = () => {
                 <div className='promise'>
                   <p className='price'>{selectedProduct?.price}</p>
                 </div>
-                <div className='addToCart'>
-                  {<Button image='' name='Add to cart' />}
-                </div>
+                <button onClick={() => handleAddToCart(selectedProduct)}>
+                  <div className='addToCart'>
+                    {<Button image='' name='Add to cart' />}
+                  </div>
+                </button>
               </div>
             </div>
           </div>

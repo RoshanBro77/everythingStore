@@ -1,9 +1,18 @@
 import './style/Header.css'
 import logo from '../assets/Images/Logo/Logo.png'
 import Button from './Button'
-import cart from '../assets/Images/otherimages/shopping-cart.png'
+import cartImage from '../assets/Images/otherimages/shopping-cart.png'
 import { Link, NavLink } from 'react-router-dom'
-function Header({}) {
+import { useContext } from 'react'
+import { CartContext } from './Cart'
+function Header() {
+  const cartContext = useContext(CartContext)
+
+  if (!cartContext) {
+    throw new Error('CartContext must be used within a CartProvider')
+  }
+
+  const { cart } = cartContext
   return (
     <div className='header'>
       <div className='middle'>
@@ -30,9 +39,12 @@ function Header({}) {
             <Button name={'Sign Up'} image='' />
           </div>
         </NavLink>
-        <div className='cart'>
-          <Button name='' image={cart} />
-        </div>
+        <NavLink className={'nav'} to={'/cart'}>
+          <div className='cart'>
+            <Button name='' image={cartImage} />
+          </div>
+          <p className='counter'>{cart.length}</p>{' '}
+        </NavLink>
       </div>
     </div>
   )

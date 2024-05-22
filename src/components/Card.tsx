@@ -1,6 +1,4 @@
-import React from 'react'
 import '../components/style/Card.css'
-import Button from './Button'
 interface Props {
   name: string
   category: string

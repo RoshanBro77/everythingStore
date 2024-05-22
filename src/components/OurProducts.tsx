@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './style/HomeBody.css'
 import dataProducts from '../dataProducts'
 import Card from './Card'
 import { useNavigate } from 'react-router-dom'
 import Button from './Button'
+import { CartContext } from './Cart'
 
 function OurProducts() {
   const navigate = useNavigate()
   const handleCardProductClick = (product: string) => {
     navigate(`/products/product/${product}`)
+  }
+  const cartContext = useContext(CartContext)
+  if (!cartContext) {
+    throw new Error('CartContext must be used within a CartProvider')
+  }
+  const { cart, setCart } = cartContext
+  const handleAddToCart = (product: any) => {
+    setCart([...cart, product])
   }
   return (
     <>
@@ -25,9 +34,11 @@ function OurProducts() {
                 category='Phones'
                 onClick={() => handleCardProductClick(product.name)}
               />
-
-              {<Button image='' name='Add to cart' />}
-              <p></p>
+              <button onClick={() => handleAddToCart(product)}>
+                <div className='addToCart'>
+                  {<Button image='' name='Add to cart' />}
+                </div>
+              </button>
             </div>
           ))}
         </div>
