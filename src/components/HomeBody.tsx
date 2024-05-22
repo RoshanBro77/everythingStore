@@ -55,7 +55,9 @@ function HomeBody() {
                 category={product.category}
                 onClick={() => handleCardProductClick(product.name)}
               />
-              {<Button image='' name='Add to cart' />}
+              <div className='addToCart'>
+                {<Button image='' name='Add to cart' />}
+              </div>
               <p></p>
             </div>
           ))}

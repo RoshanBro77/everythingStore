@@ -1,5 +1,5 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 
 function SignUp() {
   const [username, setUsername] = useState('')
@@ -66,6 +66,9 @@ function SignUp() {
           />
         </div>
         <button type='submit'>Sign Up</button>
+        <NavLink className='nav' to={'/logIn'}>
+          <p className='text'>Already a Member? Log In Here.</p>
+        </NavLink>
       </form>
     </div>
   )

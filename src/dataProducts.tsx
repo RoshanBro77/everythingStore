@@ -282,7 +282,7 @@ DURABILITY — Rugged, weather-resistant design.
 PORTABLE DESIGN — Durable, water-resistant, and easy to carry.
 LONG BATTERY LIFE — Up to 17 hours of playtime on a single charge.
 `,
-    category: 'Speaker',
+    category: 'Speakers',
   },
   {
     name: 'JBL Charge 5',
@@ -293,7 +293,7 @@ POWERFUL SOUND — Bold JBL Pro Sound with an optimized long excursion driver.
 LONG BATTERY LIFE — Up to 20 hours of playtime.
 WATERPROOF DESIGN — IP67 waterproof and dustproof rating.
 `,
-    category: 'Speaker',
+    category: 'Speakers',
   },
   {
     name: 'Sony SRS-XB43',
@@ -304,7 +304,7 @@ EXTRA BASS — Deep, punchy sound with dual passive radiators.
 PARTY CONNECT — Sync up to 100 compatible speakers.
 DURABLE DESIGN — IP67 waterproof, dustproof, and rustproof.
 `,
-    category: 'Speaker',
+    category: 'Speakers',
   },
 ]
 

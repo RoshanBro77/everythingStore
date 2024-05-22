@@ -1,0 +1,12 @@
+.product {
+  display: flex;
+  flex-wrap: wrap;
+}
+.showPage {
+  justify-content: center;
+  max-width: 80%;
+  padding-bottom: 3em;
+}
+.productLeft {
+  padding: 2em 5em;
+}
