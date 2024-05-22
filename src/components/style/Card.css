@@ -1,9 +1,9 @@
-.card {
+.box {
   justify-content: center;
   background-color: #fafafa;
   align-items: center;
   width: 17em;
-  min-height: 15em;
+  min-height: 14em;
   max-height: 25em;
   overflow: hidden;
   object-fit: cover;
@@ -11,6 +11,10 @@
   border-radius: 1em;
   margin-bottom: 2em;
   padding: 0.2em;
+}
+.card {
+  padding: 0.6em;
+  text-align: center;
 }
 .cardImage > img {
   width: 100%;
@@ -20,7 +24,7 @@
 .cardName {
   font-weight: bold;
 }
-.card:hover {
+.box:hover {
   transition: transform 0.4s;
   transform: scale(110%);
 }
