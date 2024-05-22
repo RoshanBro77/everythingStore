@@ -1,5 +1,5 @@
 import './style/Header.css'
-import logo from '../assets/Images/Logo/Logo.png'
+import logo from '../assets/Images/Logo/logo.jpeg'
 import Button from './Button'
 import cartImage from '../assets/Images/otherimages/shopping-cart.png'
 import { Link, NavLink } from 'react-router-dom'

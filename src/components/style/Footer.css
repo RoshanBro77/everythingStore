@@ -1,18 +1,20 @@
 .footer {
-  background-color: #f1f1f1;
+  background-color: #f4d35e;
   width: 100%;
   padding: 0 7.5%;
   min-height: fit-content;
-  background: #f1f1f1;
+  background: #f4d35e;
   margin-top: auto;
   bottom: 0;
-  color: #f85604;
+  color: #0d3b66;
   padding-bottom: 0.5em;
 }
 
 .footer__logo > img {
-  padding-top: 3rem;
-  width: 6em;
+  padding-top: 1rem;
+  width: 3em;
+
+  border-radius: 90%;
 }
 .footer__contents__middle {
   display: flex;
@@ -26,7 +28,7 @@
 .footer__subcontainer {
   text-decoration: none;
 
-  color: #f85604;
+  color: #0d3b66;
 }
 .footer__contents__middle__sub_Container > .subtitle {
   font-size: 1.5rem;

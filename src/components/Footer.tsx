@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/Images/Logo/Logo.png'
+import logo from '../assets/Images/Logo/logo.jpeg'
 import './style/Footer.css'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 import CallIcon from '@mui/icons-material/Call'
@@ -20,7 +20,7 @@ function Footer() {
             <div className=' footer__contents__middle__sub_Container'>
               <h4 className='subtitle'>Contact Us</h4>
               <div className='footer__contactUs__container'>
-                <a href='tel:+610451817246' className='footer__subcontainer'>
+                <a href='tel:+610431855746' className='footer__subcontainer'>
                   <div className='footerlogoandtext'>
                     <CallIcon />
                     <p>{'0451817246'}</p>

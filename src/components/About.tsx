@@ -1,4 +1,3 @@
-import React from 'react'
 import heroImage from '../assets/Images/otherimages/phoneholdinghand.jpg'
 import secondImage from '../assets/Images/otherimages/cool.png'
 import './style/About.css'

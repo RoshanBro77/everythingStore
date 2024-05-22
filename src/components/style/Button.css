@@ -1,9 +1,9 @@
 .button {
   margin-left: 0.3em;
-  color: white;
+  color: #0d3b66;
   cursor: pointer;
   padding: 0.5em 1em;
-  background-color: #f85604;
+  background-color: #f4d35e;
   border-radius: 0.5em;
   box-shadow: 0 0 10px rgba(69, 68, 68, 0.1);
 }
@@ -12,7 +12,7 @@ button {
   background-color: transparent;
 }
 .button:hover {
-  background-color: #c14203;
+  background-color: #faf0ca;
 }
 
 .button > img {
