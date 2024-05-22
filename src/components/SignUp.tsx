@@ -25,9 +25,8 @@ function SignUp() {
       alert('Passwords do not match')
       return
     }
-    // Dummy sign-up logic (replace with your backend API call)
     alert('Sign up successful')
-    navigate('/')
+    navigate('/logIn')
   }
 
   return (
