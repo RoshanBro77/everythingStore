@@ -1,8 +1,7 @@
-import './components/style/App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomeBody from './components/HomeBody'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import OurProducts from './components/OurProducts'
 import About from './components/About'
 import LogIn from './components/LogIn'
@@ -10,6 +9,8 @@ import SignUp from './components/SignUp'
 import Product from './components/Product'
 import { CartProvider } from './components/Cart'
 import CartPage from './components/CartPage'
+import './components/style/App.css'
+
 function App() {
   return (
     <CartProvider>

@@ -20,10 +20,10 @@ function Footer() {
             <div className=' footer__contents__middle__sub_Container'>
               <h4 className='subtitle'>Contact Us</h4>
               <div className='footer__contactUs__container'>
-                <a href='tel:+610431855746' className='footer__subcontainer'>
+                <a href='tel:+610000000000' className='footer__subcontainer'>
                   <div className='footerlogoandtext'>
                     <CallIcon />
-                    <p>{'0451817246'}</p>
+                    <p>{'0000000000'}</p>
                   </div>
                 </a>
                 <a
@@ -37,6 +37,7 @@ function Footer() {
                   </div>
                 </a>
                 <a
+                  target='_blank'
                   href='https://maps.app.goo.gl/QYth1sRqEYxFruBY7'
                   className='footer__subcontainer'
                 >

@@ -14,7 +14,7 @@ function Header() {
 
   const { cart } = cartContext
   return (
-    <div className='header'>
+    <section className='header'>
       <div className='middle'>
         <NavLink to={'/'}>
           <div className='logo'>
@@ -46,7 +46,7 @@ function Header() {
           <p className='counter'>{cart.length}</p>{' '}
         </NavLink>
       </div>
-    </div>
+    </section>
   )
 }
 

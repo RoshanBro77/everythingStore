@@ -12,7 +12,10 @@
   padding: 1.2em 0;
 }
 .header {
+  top: 0;
+  position: sticky;
   background-color: #f4d35e;
+  z-index: 100;
 }
 .counter {
   color: #0d3b66;
